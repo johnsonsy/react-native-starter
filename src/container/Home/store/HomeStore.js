@@ -5,7 +5,7 @@ const initState = {
   testState
 };
 
-class HomeStore {
+class HomeStore extends storeAction {
   constructor() {
     super();
     this.initState = initState;
@@ -13,8 +13,8 @@ class HomeStore {
   }
 
   @action init = async () => {
-    console.log('init')
+  
 
   }
 }
-export {HomeStore} ;
+export default new HomeStore();
